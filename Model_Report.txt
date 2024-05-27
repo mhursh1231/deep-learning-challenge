@@ -1,0 +1,27 @@
+For this part of the assignment, you’ll write a report on the performance of the deep learning model you created for Alphabet Soup.
+
+The report should contain the following:
+
+Overview of the analysis: Explain the purpose of this analysis.
+
+Results: Using bulleted lists and images to support your answers, address the following questions:
+
+Data Preprocessing
+
+What variable(s) are the target(s) for your model?
+* The target variable is the 'IS_SUCCESSFUL' column from application_df.
+What variable(s) are the features for your model?
+* The variables acting as the features for my model include all other columns minus 'IS_SUCCESSFUL.'
+What variable(s) should be removed from the input data because they are neither targets nor features?
+* Both 'EIN' and 'NAME' columns were dropped because they were neither targets nor features.
+Compiling, Training, and Evaluating the Model
+
+How many neurons, layers, and activation functions did you select for your neural network model, and why?
+* For my first attempt, I used 8 hidden nodes for the first layer and 5 hidden nodes for the second layer of the neural network because these were the numbers used in the class activity. 
+* For my second attempt, I used 10 hidden nodes for the first layer and 10 hidden nodes for the second layer of the neural network to increase performance. 
+Were you able to achieve the target model performance?
+* I was unable to achieve the target model accuracy > 75%
+What steps did you take in your attempts to increase model performance?
+* I added node layers and deleted additional columns in the dataframe to increase model performance.
+Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+* Overall, the deep learning model was approximately 73% accurate in predicting the classification problem. A way to solve this classification problem and achieve a higher prediction accuracy is to use a model with a stronger correlation between the input and the output. To create a model with a stronger correlation, one should do additional data cleaning before creating the model or use additional activation functions. 
