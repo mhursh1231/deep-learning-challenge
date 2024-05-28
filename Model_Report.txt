@@ -24,7 +24,7 @@ How many neurons, layers, and activation functions did you select for your neura
 * For my first attempt, I used 8 hidden nodes for the first layer and 5 hidden nodes for the second layer of the neural network because these were the numbers used in the class activity. 
 
 Were you able to achieve the target model performance?
-* Yes, I achieved 79% accuracy after the first attempt.
+* Yes, I achieved 79% accuracy after the first optimization attempt.
 
 What steps did you take in your attempts to increase model performance?
 * There were over 19 thousand Name features, so I binned all NAMES below 6 counts to decrease the number of features and improve prediction outcome. I also deleted additional columns, including "STATUS" and "SPECIAL_CONSIDERATIONS."
