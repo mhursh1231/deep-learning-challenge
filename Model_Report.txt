@@ -10,18 +10,24 @@ Data Preprocessing
 
 What variable(s) are the target(s) for your model?
 * The target variable is the 'IS_SUCCESSFUL' column from application_df.
+
 What variable(s) are the features for your model?
 * The variables acting as the features for my model include all other columns minus 'IS_SUCCESSFUL.'
+
 What variable(s) should be removed from the input data because they are neither targets nor features?
 * Both 'EIN' and 'NAME' columns were dropped because they were neither targets nor features.
+* In the Optimized seciton, columns "STATUS" and "SPECIAL CONSIDERATIONS" were dropped as they were neither targets nor features.
+
 Compiling, Training, and Evaluating the Model
 
 How many neurons, layers, and activation functions did you select for your neural network model, and why?
 * For my first attempt, I used 8 hidden nodes for the first layer and 5 hidden nodes for the second layer of the neural network because these were the numbers used in the class activity. 
-* For my second attempt, I used 10 hidden nodes for the first layer and 10 hidden nodes for the second layer of the neural network to increase performance. 
+
 Were you able to achieve the target model performance?
-* I was unable to achieve the target model accuracy > 75%
+* Yes, I achieved 79% accuracy after the first attempt.
+
 What steps did you take in your attempts to increase model performance?
-* I added node layers and deleted additional columns in the dataframe to increase model performance.
+* There were over 19 thousand Name features, so I binned all NAMES below 6 counts to decrease the number of features and improve prediction outcome. I also deleted additional columns, including "STATUS" and "SPECIAL_CONSIDERATIONS."
+
 Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
-* Overall, the deep learning model was approximately 73% accurate in predicting the classification problem. A way to solve this classification problem and achieve a higher prediction accuracy is to use a model with a stronger correlation between the input and the output. To create a model with a stronger correlation, one should do additional data cleaning before creating the model or use additional activation functions. 
+* Initially, the deep learning model was only 73% accurate. To improve model outcome (achieve > 75% accuracy) and solve this classification problem is to use a model with a stronger correlation between the input and the output. To create a model with a stronger correlation, one should do additional data cleaning before creating the model or use additional activation functions, including deleting unnecessary and redundant data and columns to decrease model dimensionality and improve model literacy. 
